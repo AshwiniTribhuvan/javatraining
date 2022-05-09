@@ -1,0 +1,29 @@
+import java.io.*;
+public class DemoIO2{
+public static void main(String[]args)throws Exception{
+FileInputStream fin;
+fin=new
+FileInputStream("C:\\javatraining\\files\\test1.txt");
+StringBuffer sb;
+sb=new StringBuffer();
+int x;
+System.out.println(fin.available());
+//read()will get next avaiable byte
+//from file.if no data present then it will
+//return -1
+//x=fin.read();
+//syatem.out.print((char)x);
+//x=fin.read();
+//System.out.println((char)x);
+do{
+x=fin.read();
+if(x!=-1){
+sb.append((char)x);
+}
+}
+while(x!=-1);
+System.out.println(sb.toString());
+fin. close();
+System.out.println();
+}
+}
