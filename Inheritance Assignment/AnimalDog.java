@@ -26,9 +26,9 @@ System.out.println("Animal ---> sleep method call ");
 
 }
 
-class Bird extends Animal {
+class Dog extends Animal {
 
-Bird()
+Dog()
 {
 
 
@@ -39,7 +39,7 @@ Bird()
 void eat()
 {
 
-System.out.println("Bird ----> Eat method call  --> Base class Method  ");
+System.out.println("Dog ----> Eat method call  --> Base class Method  ");
 
 }
 
@@ -47,7 +47,7 @@ System.out.println("Bird ----> Eat method call  --> Base class Method  ");
 void sleep()
 {
 
-System.out.println("bird  ---> sleep method call -> Base class Method  ");
+System.out.println("Dog   ---> sleep method call -> Base class Method  ");
 
 }
 
@@ -55,14 +55,14 @@ System.out.println("bird  ---> sleep method call -> Base class Method  ");
 void flay()
 {
 
-System.out.println("Flay ---> method call ");
+System.out.println("run ---> method call ");
 
 }
 
 }
 
 
-public class AnimalBird {
+public class AnimalDog {
 public static void main(String args[])
 {
 
@@ -71,7 +71,7 @@ Animal ob = new  Animal();
 ob.eat();
 ob.sleep();
 
-Bird ob2 = new Bird();
+Dog ob2 = new Dog();
 ob2.eat();
 ob2.sleep();
 ob2.flay();
